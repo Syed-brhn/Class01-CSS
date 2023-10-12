@@ -14,9 +14,10 @@ h1 {
     background-color: red;
 }
 
-p{
+p {
     color: white;
 }
+
 /* Below is the use of ID */
 #p1 {
     border: solid 5px white;
@@ -28,14 +29,47 @@ p{
 
 /* Below is use of Class */
 
-.arial{
+.arial {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* for applying style on every element define in tag like "a" */
 /* li  a{
     color: green;
 } */
 
-li > a{
+/* li > a{
     color: green;
+} */
+
+/* for child */
+
+/* .item >.link{
+    color: aqua;
+} */
+
+/* for decendent  */
+.item .link {
+    color: blanchedalmond;
 }
+
+/* not working have to check it  */
+/* .item.first-item {
+     border: 5px solid white;
+} */
+
+
+/* it will effect only one sibling & called child selector */
+h1+p {
+    font-weight: 800;
+}
+
+/* it will effect all the sibling of the h1  and called general sibling selector */
+h1~p {
+    font-weight: 800;
+}
+
+/* in css ID will be prior other than class */
+
+/* inherit is the thing in which we apply something on the parent and child
+ will automaticlly take that effect  like we apply something on body*/
